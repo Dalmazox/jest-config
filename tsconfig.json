@@ -1,0 +1,28 @@
+{
+    "include": ["src/**.ts"],
+    "exclude": ["node/modules", "dist"],
+    "compilerOptions": {
+        "target": "ES2017",
+        "module": "commonjs",
+
+        "outDir": "./dist",
+        "rootDir": "./src",
+
+        "strict": true,
+
+        "strictPropertyInitialization": false,
+
+        "baseUrl": "src",
+        "allowJs": true,
+        "paths": {
+            "@modules/*": ["./modules/*"]
+        },
+
+        "esModuleInterop": true,
+
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+
+        "forceConsistentCasingInFileNames": true
+    }
+}
